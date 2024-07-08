@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  body {
+    @apply subpixel-antialiased;
+  }
+  .caption {
+    @apply text-sm text-center;
+  }
+  .wide {
+    @apply lg:max-w-5xl lg:-ml-[110px] ;
+  }
+  .content-col {
+    @apply prose md:prose-lg mx-auto px-6 py-12 relative;
+  }
+  .wide-col {
+    @apply lg:max-w-6xl mx-auto px-6;
+  }
+  #animation-container canvas {
+    width: 100% !important;
+  }
+  div.code-toolbar > .toolbar.toolbar > .toolbar-item > a, div.code-toolbar > .toolbar.toolbar > .toolbar-item > button {
+    @apply text-xs bg-white;
+  }
+  .copy-to-clipboard-button span {
+    @apply text-xs;
+  }
+  .output-canvas {
+    @apply w-full;
+  }
+  .shadow-line {
+    @apply shadow-[4px_4px_0_-1px_white,4px_4px_0px_black] hover:shadow-[8px_8px_0_-1px_white,8px_8px_0px_black] ease-in-out duration-200;
+  }
+  .prose p,
+  .prose a,
+  .prose ul,
+  .prose li {
+    @apply text-[#000];
+  }
+  .pixel-button-outer {
+    @apply px-[2px] pt-[3px] pb-[4px] border-[#000];
+
+  }
+  .pixel-button-inner{
+    @apply px-2 pt-[6px] pb-[6px] mt-[4px] mb-[4px] hover:bg-[#000] hover:text-white text-sm border-[#000];
+  }
+}

@@ -1,0 +1,14 @@
+---
+title: Articles
+layout: page
+permalink: /articles/
+description: 
+eleventyExcludeFromCollections: true
+---
+
+<div class="grid gap-6 lg:gap-12 max-w-3xl mx-auto">
+	{% assign sort = collections.Article | sort: 'date' | reverse %}
+	{% for item in sort %}
+	{% include 'article-card' %}			
+	{% endfor %}
+</div>
