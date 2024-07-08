@@ -4,7 +4,7 @@
 
 @layer components {
   body {
-    @apply subpixel-antialiased;
+    @apply subpixel-antialiased text-gray-900 dark:text-gray-100;
   }
   .caption {
     @apply text-sm text-center;
@@ -33,17 +33,20 @@
   .shadow-line {
     @apply shadow-[4px_4px_0_-1px_white,4px_4px_0px_black] hover:shadow-[8px_8px_0_-1px_white,8px_8px_0px_black] ease-in-out duration-200;
   }
-  .prose p,
-  .prose a,
-  .prose ul,
-  .prose li {
-    @apply text-[#000];
-  }
+
   .pixel-button-outer {
     @apply px-[2px] pt-[3px] pb-[4px] border-[#000];
 
   }
+
+
+.prose, .prose-lg, .prose h1, .prose h2, .prose h3, .prose h4, .prose-lg h1, .prose-lg h2, .prose-lg h3, .prose-lg h4 {
+    @apply text-gray-900 dark:text-gray-100;
+  }
   .pixel-button-inner{
     @apply px-2 pt-[6px] pb-[6px] mt-[4px] mb-[4px] hover:bg-[#000] hover:text-white text-sm border-[#000];
+  }
+  h1, h2, h3, h4 {
+    @apply font-bold ;
   }
 }
