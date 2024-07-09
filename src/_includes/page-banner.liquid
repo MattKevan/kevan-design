@@ -1,32 +1,16 @@
 
-  {% if banner and banner != "" %}
-    <div class="flex flex-col bg-center h-[calc(100vh-60px)]"><!-- banner-container -->
-      <div class="flex-grow bg-center bg-cover" style="background-image: url('{{ banner }}');"></div>
-</div>
+{% if banner and banner != "" %}
+  <div class="flex flex-col bg-center h-[calc(100vh-60px)]"><!-- banner-container -->
+    <div class="flex-grow bg-center bg-cover" style="background-image: url('{{ banner }}');"></div>
+  </div>
+{% endif %}
+
+<!-- title block -->
+<div class="prose md:prose-lg mx-auto px-6 mt-20">
+  <!-- title -->
+  <h1 itemprop="name headline" class="text-5xl font-bold lg:text-6xl !mb-[20px]">{{ title }}</h1>
+  {% if description %}
+    <p class="text-2xl">{{ description }}</p>
   {% endif %}
-
-
-      <!-- title block -->
-        <div class="max-w-4xl px-4 pt-24 mx-auto">
-            <!-- title -->
-              <h1 itemprop="name headline" class="text-5xl font-bold lg:text-6xl">{{ title }}</h1>
-              {% if description %}
-                <p class="text-xl mt-2 lg:mt-4">{{ description }}</p>
-              {% endif %}
-            </div><!-- /title -->
-            <!-- publish date -->
-            {% if date and date != "" %}
-              <div class="flex">
-                <div class="pt-[21px] px-6 py-4">
-                <p class="text-xs">{{ page.date | date: "%-d %B %Y" }}</p>
-              </div><!-- /publish date -->
-              <!-- meta -->
-              <div class="p-4">
-                {% for tag in categories %}
-                  <span class="inline-flex items-center px-2 pt-1 pb-[4px] pixel-corners-8 text-xs font-medium">{{ tag }}</span>
-                {% endfor %}
-              </div><!-- /meta -->
-            {% endif %}
-
-        </div>
+</div>
 

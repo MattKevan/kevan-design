@@ -9,204 +9,291 @@ cover: pi-banner.jpg
 title: Checkout anywhere
 
 ---
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.0/dist/style.css">
 
-<style>
-  * {
-    margin: 0;
-    padding: 0;
-  }
-  </style>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.0/dist/style.css">
-
-<div class="max-w-6xl m-auto px-4 grid grid-cols-3">
+<div class="col-wide grid grid-cols-3">
   <img src="/images/work/Product.png" class="w-full">
   <img src="/images/work/Basket.png" class="w-full">
   <img src="/images/work/Checkout.png" class="w-full">
+  <p class="caption col-span-3 mt-6">↑  Mobile 'buy anywhere' prototype, enabling customers to check out anywhere on the site.</p>
+
 </div>
 
-<p class="text-center text-gray-600">↑  Mobile 'buy anywhere' prototype, enabling customers to check out anywhere on the site.</p>
 
-<div class="prose md:prose-lg max-w-4xl m-auto px-4 mt-12">
+<div class="content">
 
   <h2>About</h2>
-
-  <p></p>With long-standing, successful and complex digital products, deciding whether to prioritise fixing problems or building new features can be a challenge. Often the decision comes down to whether it's better to fix  what's there already or to risk starting again and building from scratch.
-
-  This case study looks at this challenge for a major online retailer and how I developed solutions using a lean product and UX approach.
-
-  Project details
-  Roles
-  UX designer
-  UI designer</p>
+  <p>With long-standing, successful and complex digital products, deciding whether to prioritise fixing problems or building new features can be a challenge. Often the decision comes down to whether it's better to fix  what's there already or to risk starting again and building from scratch.</p>
+  <p>This case study looks at this challenge for a major online retailer and how I developed solutions using a lean product and UX approach.</p>
 
 </div>
 
-<div class="section bg-gray-100 dark:bg-slate-800  px-4 py-20">
-  <div class="prose md:prose-lg max-w-4xl m-auto px-4">
+<div class="section">
 
-  <h2 class="mt-0">User problems</h2>
+  <div class="content">
+    <h2>User problems</h2>
     <p>I used quantative analytics data to investigate how customers were using the basket and checkout, identifying areas where people were having problems and dropping out of the flow. From this, I conducted a series of qualitative user interviews to dig further into the issues. The feedback I received fell into three main groups:</p>
-    </div>
-  <div class="max-w-6xl my-4 prose m-auto mt-12">
+  </div>
 
-    
-      <div class="  grid grid-cols-1 lg:grid-cols-3 gap-8">
-        <div class="bg-pink-200 dark:bg-pink-800 p-4 rounded-lg">
-          <h3 class="mt-0">Work-arounds</h3>
+  <div class="col-wide">
+    <div class="content-wide max-w-none">
 
+      <div class="columns-1 lg:columns-3 gap-6">
+        <div class="bg-pink-200 dark:bg-pink-800 box mb-6 lg:break-after-column">
+          <h3>Work-arounds</h3>
           <p>While the checkout had a decent conversion rate, we could see from analytics data that there was a significant drop-out at basket page. Users would add a product to their basket, go back to the catalogue to look for more products, add them to their basket, and so on. </p>
           <p>Research found that these users were using the basket as a comparison tool or to save products for later as this functionality wasn't available in the product catalogue.</p>
         </div>
 
-        <div class="bg-pink-200  dark:bg-pink-800 p-4 rounded-lg">
-
-          <h3 class="mt-[0]">Delivery surprises</h3>
-
-          We found there was a big customer drop-out between the checkout delivery and payment pages. Users would enter their delivery details and then either exit the checkout entirely or go back to the product catalogue and look for a different product. 
-          Research found that users were entering the checkout as that was the only place where they could see the delivery times and cost. If the cost was too high or the delivery was inconvenient, they'd either try a different product or abandon the purchase entirely.
+        <div class="bg-pink-200  dark:bg-pink-800 box mb-6 lg:break-after-column">
+          <h3>Delivery surprises</h3>
+          <p>We found there was a big customer drop-out between the checkout delivery and payment pages. Users would enter their delivery details and then either exit the checkout entirely or go back to the product catalogue and look for a different product. </p>
+          <p>Research found that users were entering the checkout as that was the only place where they could see the delivery times and cost. If the cost was too high or the delivery was inconvenient, they'd either try a different product or abandon the purchase entirely.</p>
         </div>
         
-        
-        <div class="bg-pink-200 dark:bg-pink-800 p-4 rounded-lg">
-
-          <h3 class="mt-0">The 'Ryanair' effect</h3>
-
-          After adding a product to the basket, the user is asked to select add-on services, such as unwrapping, rubbish disposal, installation and recycling. 
-
-          Users felt that while these services were worthwhile as they, along with the delivery fee, could add significantly to the price – an unwelcome surprise as this was not made clear before reaching the basket. One participant compared it to Ryanair, adding extra charges in the checkout and not being up-front about the real, higher price.
+        <div class="bg-pink-200 dark:bg-pink-800 box mb-6">
+          <h3>The 'Ryanair' effect</h3>
+          <p>After adding a product to the basket, the user is asked to select add-on services, such as unwrapping, rubbish disposal, installation and recycling. </p>
+          <p>Users felt that while these services were worthwhile as they, along with the delivery fee, could add significantly to the price – an unwelcome surprise as this was not made clear before reaching the basket. One participant compared it to Ryanair, adding extra charges in the checkout and not being up-front about the real, higher price.</p>
         </div>
+      </div>
+
+      <h2>Product & technical problems</h2>
+
+      <div class="columns-2 lg:columns-4 gap-6">
+        <div class="bg-pink-200 dark:bg-pink-800 box mb-6">
+          <h4>Not scalable</h4>
+          <p>Difficult to add more territories, issues multiplied as business expands.</p>
+        </div>
+        <div class="bg-pink-200 dark:bg-pink-800 box mb-6">
+          <h4>Complex</h4>
+          <p>Hard to understand full codebase and impact of changes. Lots of time spent on maintainence and repairs.</p>
+        </div>
+        <div class="bg-pink-200 dark:bg-pink-800 box mb-6">
+          <h4>Can't support new journeys</h4>
+          <p>Difficult to add new user journeys that span multiple teams due to mis-aligned priorities & targets.</p>
+        </div>
+        <div class="bg-pink-200 dark:bg-pink-800 box mb-6 break-after-column">
+          <h4>Hard to optimise</h4>
+          <p>We can't easily see how customers are interacting with the checkout and any problems they may have.</p>
+        </div>
+        <div class="bg-pink-200 dark:bg-pink-800 box mb-6 ">
+          <h4>No separation of concerns</h4>
+          <p>Teams can't take responsibility for their own areas or release independently.</p>
+        </div>
+        <div class="bg-pink-200 dark:bg-pink-800 box mb-6 lg:break-after-column">
+          <h4>Maintenance-heavy</h4>
+          <p>Developers spend a lot of time doing things they shouldn’t have to, e.g. updating copy and adding services.</p>
+        </div>
+
+        <div class="bg-pink-200 dark:bg-pink-800 box mb-6">
+          <h4>Slow pace</h4>
+          <p>It takes a long time to do anything due to code complexity and duplication.</p>
+        </div>
+
+        <div class="bg-pink-200 dark:bg-pink-800 box mb-6">
+          <h4>Can't improve UX</h4>
+          <p>Fragile & inflexible tech means we can’t run tests or experiment with new flows and experiences.</p>
+        </div>
+      </div>
+
+
+
     </div>
-
-    <h2>Product & technical problems</h2>
-    <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
-
-      <div class="bg-pink-200 dark:bg-pink-800 p-4 rounded-lg">
-        <h4 class="mt-0">Not scalable</h4>
-        <p class="mb-0">Difficult to add more territories, issues multiplied as business expands.</p>
-      </div>
-
-      <div class="bg-pink-200 dark:bg-pink-800 p-4 rounded-lg">
-        <h4 class="mt-0">Complex</h4>
-        <p class="mb-0">Hard to understand full codebase and impact of changes. Lots of time spent on maintainence and repairs.</p>
-      </div>
-
-      <div class="bg-pink-200 dark:bg-pink-800 p-4 rounded-lg">
-        <h4 class="mt-0">Can’t support new journeys</h4>
-        <p class="mb-0">Difficult to add new user journeys that span multiple teams due to mis-aligned priorities & targets.</p>
-      </div>
-
-      <div class="bg-pink-200 dark:bg-pink-800 p-4 rounded-lg">
-        <h4 class="mt-0">Hard to optimise</h4>
-        <p class="mb-0">We can’t easily see how customers are interacting with the checkout and any problems they may have.</p>
-      </div>
-
-      <div class="bg-pink-200 dark:bg-pink-800 p-4 rounded-lg">
-        <h4 class="mt-0">No separation of concerns</h4>
-        <p class="mb-0">Teams can’t take responsibility for their own areas or release independently.</p>
-      </div>
-
-      <div class="bg-pink-200 dark:bg-pink-800 p-4 rounded-lg">
-        <h4 class="mt-0">Maintenance-heavy</h4>
-        <p class="mb-0">Developers spend a lot of time doing things they shouldn’t have to, e.g. updating copy and adding services.</p>
-      </div>
-
-      <div class="bg-pink-200 dark:bg-pink-800 p-4 rounded-lg">
-        <h4 class="mt-0">Slow pace</h4>
-        <p class="mb-0">It takes a long time to do anything due to code complexity and duplication.</p>
-      </div>
-
-      <div class="bg-pink-200 dark:bg-pink-800 p-4 rounded-lg">
-        <h4 class="mt-0">Can’t improve UX</h4>
-        <p class="mb-0">Fragile & inflexible tech means we can’t run tests or experiment with new flows and experiences.</p>
-      </div>
-    </div>
-
   </div>
-</div>
+</div><!-- /section -->
 
 
-<div class="prose md:prose-lg max-w-4xl m-auto px-4 mt-20">
+<div class="content">
 
   <h2>UX review</h2>
-
   <p>To get a full picture of the problems and opportunities and to ensure everyone's ideas and suggestions were gathered, I held a series of UX review workshops with the product and developer squads, stakeholders and related teams. I synthesised all the research and data we had, including user insights, analytics, support queries and financial performance and added it to an end-to-end visualisation of the checkout journey. </p>
   <p>Participants were invited to add 'how might we' statements to highlight problems or suggest new features.</p>
 
 </div>
 
-<div class="max-w-6xl m-auto px-4 grid grid-cols-2 gap-6 py-20">
+<div class="col-wide grid grid-cols-2 gap-6">
   <img src="/images/work/audit1.jpg" class="w-full col-span-2">
   <img src="/images/work/audit2.jpg" class="w-full">
   <img src="/images/work/audit3.jpg" class="w-full">
 </div>
 
-<div class="prose md:prose-lg max-w-4xl m-auto px-4 mt-12">
-
-  <h2>Hypotheses mapping and prioritisation</h2>
-
-  <p> Working as part of a product trio with the product owner and technical lead, we converted all the 'how might we' statements into hypotheses that could be investigated further and prioritised according to value.</p>
-  <p>As we worked through the process, key themes emerged which became the foundations of an opportunity map, helping us understand what further discovery was needed and the rough order they needed to be done in.</p>
-</div>
-
-<div class="max-w-6xl m-auto px-4 grid grid-cols-2 gap-6 py-20">
-  <img src="/images/work/miro.png" class="w-full">
-  <img src="/images/work/canvas.png" class="w-full">
-</div>
-<div class="max-w-6xl m-auto px-4 gap-6 py-20 prose md:prose-lg">
-
-<h3>High value / high risk</h3>
-<div class="grid grid-cols-2 lg:grid-cols-4 gap-6 prose max-w-6xl">
-  <h4 class="col-span-2 lg:col-span-4 ">Journey improvements</h4>
- 
-
-  <div class="bg-pink-200 dark:bg-pink-800 p-4 rounded-lg">
-    <p class="m-0">We believe that by enabling customers to continue checking-out across devices or sessions, we will encourage customers to complete their purchase, reducing drop-off and increasing conversion.</p>
+<div class="section">
+  <div class="content">
+    <h2 class="!mt-0">Hypotheses mapping and prioritisation</h2>
+    <p> Working as part of a product trio with the product owner and technical lead, we converted all the 'how might we' statements into hypotheses that could be investigated further and prioritised according to value.</p>
+    <p>As we worked through the process, key themes emerged which became the foundations of an opportunity map, helping us understand what further discovery was needed and the rough order they needed to be done in.</p>
   </div>
 
-  <div class="bg-pink-200 dark:bg-pink-800 p-4 rounded-lg">
-    <p class="mb-0">We believe that by clearly showing the customer the decisions they've made, we will reduce the number of mistakes reported to the call centre, reinforce trust and increase confidence.</p>
+  <div class="col-wide grid grid-cols-2 gap-6">
+    <img src="/images/work/miro.png" class="w-full">
+    <img src="/images/work/canvas.png" class="w-full">
   </div>
 
+  <div class="col-wide">
+    <div class="content-wide max-w-none">
+      <h3 class="!mt-0">High value / low risk</h3>
+      <h4 class="!mt-0">Journey improvements</h4>
 
-  <div class="bg-pink-200 dark:bg-pink-800 p-4 rounded-lg">
-    <p class="mb-0">We believe that by decreasing perceived time to place an order, customers see us as being easy to use and therefore more likely to return.</p>
+      <div class="columns-2 lg:columns-4 gap-6 mb-12">
+      
+        <div class="box bg-pink-200 dark:bg-pink-800 mb-6">
+          <p>We believe that by enabling customers to continue checking-out across devices or sessions, we will encourage customers to complete their purchase, reducing drop-off and increasing conversion.</p>
+        </div>
+
+        <div class="box bg-pink-200 dark:bg-pink-800 mb-6 lg:break-after-column">
+          <p class="mb-0">We believe that by clearly showing the customer the decisions they've made, we will reduce the number of mistakes reported to the call centre, reinforce trust and increase confidence.</p>
+        </div>
+
+        <div class="box bg-pink-200 dark:bg-pink-800 mb-6">
+          <p class="mb-0">We believe that by decreasing perceived time to place an order, customers see us as being easy to use and therefore more likely to return.</p>
+        </div>
+
+        <div class="box bg-pink-200 dark:bg-pink-800 mb-6 break-after-column">
+          <p class="mb-0">We believe that providing entry to finance from the product page will enable a streamlined and more personal finance journey.</p>
+        </div>
+
+        <div class="box bg-pink-200 dark:bg-pink-800 mb-6">
+          <p class="mb-0">We believe that helping customers pay in the fastest, most convenient ways for them will reduce speed-to-purchase and increase confidence in themselves and our product.</p>
+        </div>
+
+        <div class="box bg-pink-200 dark:bg-pink-800 mb-6 lg:break-after-column">
+          <p class="mb-0">We believe that improving accessibility will make the experience more effective for more people and improve brand trust and loyalty.</p>
+        </div>
+
+        <div class="box bg-pink-200 dark:bg-pink-800 mb-6">
+          <p class="mb-0">We believe that reducing common mistakes customers make while purchasing will reduce post-purchase support calls and customer frustration.</p>
+        </div>
+
+        <div class="box bg-pink-200 dark:bg-pink-800 mb-6">
+          <p class="mb-0">We believe that limiting the number of decisions a user must make will lead to a simpler funnel, reducing drop-off and mistakes.</p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-12 items-start">
+
+        <div>
+        <h4 class="!mt-0">Services</h4>
+
+        <div class="columns-2 gap-6">
+
+          <div class="box bg-pink-200 dark:bg-pink-800 break-after-column">
+            <p class="mb-0">We believe that better messaging will help customers understand what services are available and when they'll be able to purchase them.</p>
+          </div>
+
+          <div class="box bg-pink-200 dark:bg-pink-800">
+            <p class="mb-0">We believe that limiting the number of decisions a user must make will lead to a simpler funnel, reducing drop-off and mistakes.</p>
+          </div>
+
+        </div>
+      </div>
+      <div>
+        <h4 class="!mt-0">User accounts</h4>
+
+        <div class="columns-2 gap-6">
+
+          <div class="box bg-pink-200 dark:bg-pink-800">
+            <p class="mb-0">We believe that by getting existing customers to login and new customers to register, we will be able to look at more sophisticated basket abandonment strategies.</p>
+          </div>
+          <div></div>
+          
+        </div>
+      </div>
+      </div>
+
+      <h3>High value / high risk</h3>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-12 items-start">
+        <div>
+          <h4 class="col-span-2 !mt-0">User accounts</h4>
+
+          <div class="columns-2 gap-6">
+            <div class="box bg-pink-200 dark:bg-pink-800 mb-6">
+              <p class="mb-0">We believe that by better utilising data saved to customers’ accounts we can simplify their checkout experience, decreasing conversion time.</p>
+            </div>
+  
+            <div class="box bg-pink-200 dark:bg-pink-800 mb-6 break-after-column">
+              <p class="mb-0">We believe that a personalised checkout  will lead to a quicker, more tailored experience, making customers feel  valued and therefore more likely to return.</p>
+            </div>
+  
+            <div class="box bg-pink-200 dark:bg-pink-800 mb-6">
+              <p class="mb-0">We believe that by encouraging returning customers to sign in we can create a one-click shopping experience.</p>
+            </div>
+  
+            <div class="box bg-pink-200 dark:bg-pink-800 mb-6">
+              <p class="mb-0">We believe that by making new users create an account we will encourage them to self-serve order issues.</p>
+            </div>
+          </div>
+        </div>
+   
+        <div>
+          <h4 class="col-span-2 !mt-0">Services & delivery</h4>
+          <div class="columns-2 gap-6">
+            <div class="box bg-pink-200 dark:bg-pink-800 mb-6">
+              <p class="mb-0">Customers weigh up delivery costs and availability as part of choosing a product, so we believe that  accurate delivery information will help them feel confident that they have the full picture, with no hidden surprises.</p>
+            </div>
+
+            <div class="box bg-pink-200 dark:bg-pink-800 mb-6 break-after-column">
+              <p class="mb-0">We believe that making more of the additional benefits, such as services, will lead to an increased uptake and improve satisfaction. Selling a solution, not just a product.</p>
+            </div>
+
+            <div class="box bg-pink-200 dark:bg-pink-800 mb-6">
+              <p class="mb-0">People consider services as part of the total cost of a product, so we believe that the ability to add servcies at a product level will foster commitment to the purchase and improve quality of leads into basket.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+
+        <div>
+          <h4 class="!mt-0">Payments & promotions</h4>
+          <div class="columns-2 gap-6">
+            <div class="box bg-pink-200 dark:bg-pink-800 mb-6 break-after-column">
+              <p class="mb-0">We believe that enabling quick payment methods like PayPal or Apple Pay on relevant products will reduce payment friction and increase conversion.</p>
+            </div>
+            <div class="box bg-pink-200 dark:bg-pink-800">
+              <p class="mb-0">We believe that incentivising referrals will drive sales and strengthen the brand. (People are more likely to trust brands recommended to them by friends and family).</p>
+            </div>
+          </div>
+
+        </div>
+        <div>
+          <h4 class="!mt-0">Basket</h4>
+
+          <div class="columns-2 gap-6">
+
+            <div class="box bg-pink-200 dark:bg-pink-800">
+              <p class="mb-0">We believe that by enabling the basket on every page, customers can get a persistent view of their order and begin checking out from anywhere.</p>
+            </div>
+          </div>
+          
+        </div>
+
+      </div>
+        
+    </div>
   </div>
+</div><!-- /section -->
 
-  <div class="bg-pink-200 dark:bg-pink-800 p-4 rounded-lg">
-    <p class="mb-0">We believe that providing entry to finance from the product page will enable a streamlined and more personal finance journey.</p>
-  </div>
-
-  <div class="bg-pink-200 dark:bg-pink-800 p-4 rounded-lg">
-    <p class="mb-0">We believe that reducing common mistakes customers make while purchasing will reduce post-purchase support calls and customer frustration.</p>
-  </div>
-
-  <div class="bg-pink-200 dark:bg-pink-800 p-4 rounded-lg">
-    <p class="mb-0">We believe that improving the website's accessibility will make the experience more effective for more people and improve brand trust and loyalty.</p>
-  </div>
-
-  <div class="bg-pink-200 dark:bg-pink-800 p-4 rounded-lg">
-    <p class="mb-0">We believe that reducing common mistakes customers make while purchasing will reduce post-purchase support calls and customer frustration.</p>
-  </div>
-
-  <div class="bg-pink-200 dark:bg-pink-800 p-4 rounded-lg">
-    <p class="mb-0">We believe that limiting the number of decisions a user must make will lead to a simpler funnel, reducing drop-off and mistakes.</p>
-  </div>
-</div>
-</div>
-<svg id="mindmap" class="w-full h-[800px]"></svg>
-
-<div class="prose md:prose-lg max-w-4xl m-auto px-4 mt-12">
+<div class="content">
 
   <h2>Opportunity mapping</h2>
 
   After pro
 </div>
 
-<div class="max-w-6xl m-auto px-4 ">
+
+<div class="col-wide ">
+  <svg id="mindmap" class="w-full h-[800px]"></svg>
+
   <img src="/images/work/opportunities.jpg" class="w-full">
 </div>
 
-<div class="prose md:prose-lg max-w-4xl m-auto px-4 mt-12">
+<div class="content">
+  <h2>Lean approach</h2>
+  <p>It was clear we had a lot of work to do</p>
+
 
   <h2>Product vision</h2>
 
