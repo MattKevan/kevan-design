@@ -9,7 +9,7 @@ cover: pi-banner.jpg
 title: Checkout anywhere
 
 ---
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.0/dist/style.css">
+<script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
 
 <div class="col-wide grid grid-cols-3">
   <img src="/images/work/Product.png" class="w-full">
@@ -38,7 +38,7 @@ title: Checkout anywhere
   <div class="col-wide">
     <div class="content-wide max-w-none">
 
-      <div class="columns-1 lg:columns-3 gap-6">
+      <div class="columns-1  lg:columns-3 gap-6">
         <div class="bg-pink-200 dark:bg-pink-800 box mb-6 lg:break-after-column">
           <h3>Work-arounds</h3>
           <p>While the checkout had a decent conversion rate, we could see from analytics data that there was a significant drop-out at basket page. Users would add a product to their basket, go back to the catalogue to look for more products, add them to their basket, and so on. </p>
@@ -60,7 +60,7 @@ title: Checkout anywhere
 
       <h2>Product & technical problems</h2>
 
-      <div class="columns-2 lg:columns-4 gap-6">
+      <div class="columns-1 md:columns-2 lg:columns-4 gap-6">
         <div class="bg-pink-200 dark:bg-pink-800 box mb-6">
           <h4>Not scalable</h4>
           <p>Difficult to add more territories, issues multiplied as business expands.</p>
@@ -73,7 +73,7 @@ title: Checkout anywhere
           <h4>Can't support new journeys</h4>
           <p>Difficult to add new user journeys that span multiple teams due to mis-aligned priorities & targets.</p>
         </div>
-        <div class="bg-pink-200 dark:bg-pink-800 box mb-6 break-after-column">
+        <div class="bg-pink-200 dark:bg-pink-800 box mb-6 md:break-after-column">
           <h4>Hard to optimise</h4>
           <p>We can't easily see how customers are interacting with the checkout and any problems they may have.</p>
         </div>
@@ -91,7 +91,7 @@ title: Checkout anywhere
           <p>It takes a long time to do anything due to code complexity and duplication.</p>
         </div>
 
-        <div class="bg-pink-200 dark:bg-pink-800 box mb-6">
+        <div class="bg-pink-200 dark:bg-pink-800 box">
           <h4>Can't improve UX</h4>
           <p>Fragile & inflexible tech means we can’t run tests or experiment with new flows and experiences.</p>
         </div>
@@ -135,7 +135,7 @@ title: Checkout anywhere
       <h3 class="!mt-0">High value / low risk</h3>
       <h4 class="!mt-0">Journey improvements</h4>
 
-      <div class="columns-2 lg:columns-4 gap-6 mb-12">
+      <div class="columns-1 md:columns-2 lg:columns-4 gap-6 mb-12">
       
         <div class="box bg-pink-200 dark:bg-pink-800 mb-6">
           <p>We believe that by enabling customers to continue checking-out across devices or sessions, we will encourage customers to complete their purchase, reducing drop-off and increasing conversion.</p>
@@ -149,7 +149,7 @@ title: Checkout anywhere
           <p class="mb-0">We believe that by decreasing perceived time to place an order, customers see us as being easy to use and therefore more likely to return.</p>
         </div>
 
-        <div class="box bg-pink-200 dark:bg-pink-800 mb-6 break-after-column">
+        <div class="box bg-pink-200 dark:bg-pink-800 mb-6 md:break-after-column">
           <p class="mb-0">We believe that providing entry to finance from the product page will enable a streamlined and more personal finance journey.</p>
         </div>
 
@@ -175,13 +175,13 @@ title: Checkout anywhere
         <div>
         <h4 class="!mt-0">Services</h4>
 
-        <div class="columns-2 gap-6">
+        <div class="columns-1 md:columns-2 gap-6">
 
-          <div class="box bg-pink-200 dark:bg-pink-800 break-after-column">
+          <div class="box bg-pink-200 dark:bg-pink-800 mb-6 md:break-after-column">
             <p class="mb-0">We believe that better messaging will help customers understand what services are available and when they'll be able to purchase them.</p>
           </div>
 
-          <div class="box bg-pink-200 dark:bg-pink-800">
+          <div class="box bg-pink-200 dark:bg-pink-800 mb-6">
             <p class="mb-0">We believe that limiting the number of decisions a user must make will lead to a simpler funnel, reducing drop-off and mistakes.</p>
           </div>
 
@@ -190,7 +190,7 @@ title: Checkout anywhere
       <div>
         <h4 class="!mt-0">User accounts</h4>
 
-        <div class="columns-2 gap-6">
+        <div class="columns-1 md:columns-2 gap-6">
 
           <div class="box bg-pink-200 dark:bg-pink-800">
             <p class="mb-0">We believe that by getting existing customers to login and new customers to register, we will be able to look at more sophisticated basket abandonment strategies.</p>
@@ -207,12 +207,12 @@ title: Checkout anywhere
         <div>
           <h4 class="col-span-2 !mt-0">User accounts</h4>
 
-          <div class="columns-2 gap-6">
+          <div class="columns-1 md:columns-2 gap-6">
             <div class="box bg-pink-200 dark:bg-pink-800 mb-6">
               <p class="mb-0">We believe that by better utilising data saved to customers’ accounts we can simplify their checkout experience, decreasing conversion time.</p>
             </div>
   
-            <div class="box bg-pink-200 dark:bg-pink-800 mb-6 break-after-column">
+            <div class="box bg-pink-200 dark:bg-pink-800 mb-6 md:break-after-column">
               <p class="mb-0">We believe that a personalised checkout  will lead to a quicker, more tailored experience, making customers feel  valued and therefore more likely to return.</p>
             </div>
   
@@ -228,12 +228,12 @@ title: Checkout anywhere
    
         <div>
           <h4 class="col-span-2 !mt-0">Services & delivery</h4>
-          <div class="columns-2 gap-6">
+          <div class="columns-1 md:columns-2 gap-6">
             <div class="box bg-pink-200 dark:bg-pink-800 mb-6">
               <p class="mb-0">Customers weigh up delivery costs and availability as part of choosing a product, so we believe that  accurate delivery information will help them feel confident that they have the full picture, with no hidden surprises.</p>
             </div>
 
-            <div class="box bg-pink-200 dark:bg-pink-800 mb-6 break-after-column">
+            <div class="box bg-pink-200 dark:bg-pink-800 mb-6 md:break-after-column">
               <p class="mb-0">We believe that making more of the additional benefits, such as services, will lead to an increased uptake and improve satisfaction. Selling a solution, not just a product.</p>
             </div>
 
@@ -248,8 +248,8 @@ title: Checkout anywhere
 
         <div>
           <h4 class="!mt-0">Payments & promotions</h4>
-          <div class="columns-2 gap-6">
-            <div class="box bg-pink-200 dark:bg-pink-800 mb-6 break-after-column">
+          <div class="columns-1 md:columns-2 gap-6">
+            <div class="box bg-pink-200 dark:bg-pink-800 mb-6 md:break-after-column">
               <p class="mb-0">We believe that enabling quick payment methods like PayPal or Apple Pay on relevant products will reduce payment friction and increase conversion.</p>
             </div>
             <div class="box bg-pink-200 dark:bg-pink-800">
@@ -261,7 +261,7 @@ title: Checkout anywhere
         <div>
           <h4 class="!mt-0">Basket</h4>
 
-          <div class="columns-2 gap-6">
+          <div class="columns-1 md:columns-2 gap-6">
 
             <div class="box bg-pink-200 dark:bg-pink-800">
               <p class="mb-0">We believe that by enabling the basket on every page, customers can get a persistent view of their order and begin checking out from anywhere.</p>
@@ -285,7 +285,7 @@ title: Checkout anywhere
 
 
 <div class="col-wide ">
-  <svg id="mindmap" class="w-full h-[800px]"></svg>
+  <div id="chart"></div>
 
   <img src="/images/work/opportunities.jpg" class="w-full">
 </div>
@@ -332,5 +332,118 @@ High staff turnover and competing priorities meant that we found it increasingly
 ## Learning
 
 </div>
+<script type="module">
+  function Tree(data, { // data is either tabular (array of objects) or hierarchy (nested objects)
+    path, // as an alternative to id and parentId, returns an array identifier, imputing internal nodes
+    id = Array.isArray(data) ? d => d.id : null, // if tabular data, given a d in data, returns a unique identifier (string)
+    parentId = Array.isArray(data) ? d => d.parentId : null, // if tabular data, given a node d, returns its parent's identifier
+    children, // if hierarchical data, given a d in data, returns its children
+    tree = d3.tree, // layout algorithm (typically d3.tree or d3.cluster)
+    separation = tree === d3.tree ? (a, b) => (a.parent == b.parent ? 1 : 2) / a.depth : (a, b) => a.parent == b.parent ? 1 : 2,
+    sort, // how to sort nodes prior to layout (e.g., (a, b) => d3.descending(a.height, b.height))
+    label, // given a node d, returns the display name
+    title, // given a node d, returns its hover text
+    link, // given a node d, its link (if any)
+    linkTarget = "_blank", // the target attribute for links (if any)
+    width = 1200, // outer width, in pixels
+    height = 1200, // outer height, in pixels
+    margin = 60, // shorthand for margins
+    marginTop = margin, // top margin, in pixels
+    marginRight = margin, // right margin, in pixels
+    marginBottom = margin, // bottom margin, in pixels
+    marginLeft = margin, // left margin, in pixels
+    radius = Math.min(width - marginLeft - marginRight, height - marginTop - marginBottom) / 2, // outer radius
+    r = 3, // radius of nodes
+    padding = 1, // horizontal padding for first and last column
+    fill = "#999", // fill for nodes
+    fillOpacity, // fill opacity for nodes
+    stroke = "#555", // stroke for links
+    strokeWidth = 1.5, // stroke width for links
+    strokeOpacity = 0.4, // stroke opacity for links
+    strokeLinejoin, // stroke line join for links
+    strokeLinecap, // stroke line cap for links
+    halo = "#fff", // color of label halo 
+    haloWidth = 3, // padding around the labels
+  } = {}) {
+    
+    // If id and parentId options are specified, or the path option, use d3.stratify
+    // to convert tabular data to a hierarchy; otherwise we assume that the data is
+    // specified as an object {children} with nested objects (a.k.a. the "flare.json"
+    // format), and use d3.hierarchy.
+    const root = path != null ? d3.stratify().path(path)(data)
+        : id != null || parentId != null ? d3.stratify().id(id).parentId(parentId)(data)
+        : d3.hierarchy(data, children);
 
-<script src="https://cdn.jsdelivr.net/npm/d3@7.8.5/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.17.0/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.0/dist/index.js"></script><script>(()=>{setTimeout(()=>{const{markmap:O,mm:h}=window,M=new O.Toolbar;M.attach(h);const re=M.render();re.setAttribute("style","position:absolute;bottom:20px;right:20px"),document.body.append(re)})})()</script><script>((i,L,f,o)=>{const w=i();window.mm=w.Markmap.create("svg#mindmap",(L||w.deriveOptions)(o),f)})(()=>window.markmap,null,{"content":"markmap","children":[{"content":"Links","children":[{"content":"<a href=\"https://markmap.js.org/\">Website</a>","children":[],"payload":{"lines":"3,4"}},{"content":"<a href=\"https://github.com/gera2ld/markmap\">GitHub</a>","children":[],"payload":{"lines":"4,6"}}],"payload":{"lines":"1,2"}},{"content":"Related Projects","children":[{"content":"<a href=\"https://github.com/gera2ld/coc-markmap\">coc-markmap</a> for Neovim","children":[],"payload":{"lines":"8,9"}},{"content":"<a href=\"https://marketplace.visualstudio.com/items?itemName=gera2ld.markmap-vscode\">markmap-vscode</a> for VSCode","children":[],"payload":{"lines":"9,10"}},{"content":"<a href=\"https://github.com/emacs-eaf/eaf-markmap\">eaf-markmap</a> for Emacs","children":[],"payload":{"lines":"10,12"}}],"payload":{"lines":"6,7"}},{"content":"Features","children":[{"content":"Lists","children":[{"content":"<strong>strong</strong> <s>del</s> <em>italic</em> <mark>highlight</mark>","children":[],"payload":{"lines":"18,19"}},{"content":"<code>inline code</code>","children":[],"payload":{"lines":"19,20"}},{"content":"<svg width=\"16\" height=\"16\" viewBox=\"0 -3 24 24\"><path d=\"M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2m-9 14-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8z\"></path></svg> checkbox","children":[{"content":"<a href=\"#?d=gist:af76a4c245b302206b16aec503dbe07b:katex.md\">More Katex Examples</a>","children":[],"payload":{"lines":"21,22"}}],"payload":{"lines":"20,22"}},{"content":"Now we can wrap very very very very long text based on <code>maxWidth</code> option","children":[],"payload":{"lines":"22,24"}}],"payload":{"lines":"16,17"}},{"content":"Blocks","children":[{"content":"<pre><code class=\"language-js\"><span class=\"hljs-variable language_\">console</span>.<span class=\"hljs-title function_\">log</span>(<span class=\"hljs-string\">'hello, JavaScript'</span>)\n</code></pre>","children":[]},{"content":"<table data-lines=\"30,34\">\n<thead data-lines=\"30,31\">\n<tr data-lines=\"30,31\">\n<th>Products</th>\n<th>Price</th>\n</tr>\n</thead>\n<tbody data-lines=\"32,34\">\n<tr data-lines=\"32,33\">\n<td>Apple</td>\n<td>4</td>\n</tr>\n<tr data-lines=\"33,34\">\n<td>Banana</td>\n<td>2</td>\n</tr>\n</tbody>\n</table>","children":[],"payload":{"lines":"30,34"}},{"content":"<img src=\"/favicon.png\" alt=\"\">","children":[]}],"payload":{"lines":"24,25"}}],"payload":{"lines":"12,13"}}]},{"colorFreezeLevel":2,"pan":false,"zoom":false})</script>
+    // Sort the nodes.
+    if (sort != null) root.sort(sort);
+
+    // Compute labels and titles.
+    const descendants = root.descendants();
+    const L = label == null ? null : descendants.map(d => label(d.data, d));
+
+    // Compute the layout.
+    tree().size([2 * Math.PI, radius]).separation(separation)(root);
+
+    const svg = d3.create("svg")
+        .attr("viewBox", [-marginLeft - radius, -marginTop - radius, width, height])
+        .attr("width", width)
+        .attr("height", height)
+        .attr("style", "max-width: 100%; height: auto; height: intrinsic;")
+        .attr("font-family", "Bricolage Grotesque")
+        .attr("font-size", 12);
+    svg.append("g")
+        .attr("fill", "none")
+        .attr("stroke", stroke)
+        .attr("stroke-opacity", strokeOpacity)
+        .attr("stroke-linecap", strokeLinecap)
+        .attr("stroke-linejoin", strokeLinejoin)
+        .attr("stroke-width", strokeWidth)
+      .selectAll("path")
+      .data(root.links())
+      .join("path")
+        .attr("d", d3.linkRadial()
+            .angle(d => d.x)
+            .radius(d => d.y));
+
+    const node = svg.append("g")
+      .selectAll("a")
+      .data(root.descendants())
+      .join("a")
+        .attr("xlink:href", link == null ? null : d => link(d.data, d))
+        .attr("target", link == null ? null : linkTarget)
+        .attr("transform", d => `rotate(${d.x * 180 / Math.PI - 90}) translate(${d.y},0)`);
+
+    node.append("circle")
+        .attr("fill", d => d.children ? stroke : fill)
+        .attr("r", r);
+
+    if (title != null) node.append("title")
+        .text(d => title(d.data, d));
+
+    if (L) node.append("text")
+        .attr("transform", d => `rotate(${d.x >= Math.PI ? 180 : 0})`)
+        .attr("dy", "0.32em")
+        .attr("x", d => d.x < Math.PI === !d.children ? 6 : -6)
+        .attr("text-anchor", d => d.x < Math.PI === !d.children ? "start" : "end")
+        .attr("paint-order", "stroke")
+        .attr("stroke", halo)
+        .attr("stroke-width", haloWidth)
+        .text((d, i) => L[i]);
+
+    return svg.node();
+  }
+  
+  // Load your JSON data
+  d3.json("/images/opportunities.json").then(data => {
+    // Create the radial tree visualization
+    const tree = Tree(data, {
+      label: d => d.name,
+      width: 1200,
+      height: 1200,
+      margin: 80
+    });
+    
+    // Append the SVG to the chart container
+    d3.select("#chart").node().appendChild(tree);
+  });
+</script>
