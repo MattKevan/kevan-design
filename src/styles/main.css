@@ -40,8 +40,12 @@
   .box p:first-child {
     @apply !mt-0;
   }
+  .box li:last-child,
   .box p:last-child {
     @apply !mb-0;
+  }
+  .box ul {
+    @apply mb-0;
   }
   #animation-container canvas {
     width: 100% !important;
@@ -65,7 +69,7 @@
   }
 
 
-.prose, .prose-lg, .prose h1, .prose h2, .prose h3, .prose h4, .prose-lg h1, .prose-lg h2, .prose-lg h3, .prose-lg h4 {
+.prose, .prose-lg, .prose h1, .prose h2, .prose h3, .prose h4, .prose-lg h1, .prose-lg h2, .prose-lg h3, .prose-lg h4, .prose li::marker {
     @apply text-gray-900 dark:text-gray-100;
   }
   .pixel-button-inner{

@@ -2,10 +2,10 @@
  "name": "Oppprtunities",
  "children": [
   {
-   "name": "Scalable & efficient",
+   "name": "Scalability",
    "children": [
     {
-     "name": "Knowing our product",
+     "name": "Telemetry",
      "children": [
       {"name": "Client-side data logging"},
       {"name": "Page element-level tracking"}
@@ -21,7 +21,7 @@
      ]
     },
     {
-     "name": "Remove duplication",
+     "name": "De-duplication",
      "children": [
       {"name": "Responsive basket"},
       {"name": "Responsive checkout"},
@@ -45,30 +45,32 @@
    ]
   },
   {
-   "name": "Safe, secure & efficient",
+   "name": "Safety",
    "children": [
     {"name": "Journey blockers",
         "children": [
-        {"name": "Payment errors"}
+        {"name": "Payment errors"},
+        {"name": "System outages"}
         ]
     },
-    {"name": "Reduce manual intervention"},
-    {"name": "Order data accuracy",
+    {"name": "Failure recovery"},
+    {"name": "Data accuracy",
      "children": [
-      {"name": "Special instructions",
+      {"name": "Delivery",
         "children": [
-            {"name": "Get it earlier"},
+            {"name": "Get better details"},
             {"name": "Better formatting"},
             {"name": "Save to account"}
         ]},
-      {"name": "Accurate contact info",
+      {"name": "Contact info",
         "children": [
-            {"name": "Contact info"},
+            {"name": "Validation"},
             {"name": "Add on order review page"},
             {"name": "Support +44 numbers"}
         ]},
       {"name": "Services",
       "children": [
+            {"name": "Reduce failed deliveries"},
             {"name": "Ask the right questions"},
             {"name": "Get the right answers"}
         ]},
@@ -82,27 +84,47 @@
   {
    "name": "Upsells",
    "children": [
-    {"name": "Expand proposition"},
-    {"name": "Sales pitch"},
-    {"name": "Lead generation"}   
+    {"name": "Expand proposition",
+    "children": [
+        {"name": "Delivery"},
+        {"name": "Timeslots"},
+        {"name": "Services"},
+        {"name": "Warranties"},
+        {"name": "Recommendations"}
+    ]},
+    {"name": "Sales pitch",
+    "children": [
+        {"name": "Pressure to buy"},
+        {"name": "Promotions"},
+        {"name": "Discounts"},
+        {"name": "Services"},
+        {"name": "Delivery proposition"}
+    ]},
+    {"name": "Lead generation",
+    "children": [
+        {"name": "Aftercare"},
+        {"name": "Basket abandonment"},
+        {"name": "Payment failures"},
+        {"name": "Retargeting"}
+    ]}   
     ]
   },
   {
-   "name": "Quick buying journey",
+   "name": "Journeys",
    "children": [
-    {"name": "Logged in journey",
+    {"name": "Logged-in",
     "children": [
         {"name": "Data collection"},
         {"name": "Data use"},
         {"name": "Autofill"},
-        {"name": "Persistant login"}
+        {"name": "Persistent login"}
     ]},
-    {"name": "Anon journey",
+    {"name": "Anonymous",
     "children": [
         {"name": "Sign in"},
         {"name": "Sign up"}
     ]},
-    {"name": "Global journey",
+    {"name": "Global",
     "children": [
         {"name": "Failure recovery"},
         {"name": "Error messages"},
