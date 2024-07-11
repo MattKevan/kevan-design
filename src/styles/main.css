@@ -40,7 +40,10 @@
   .box p:first-child {
     @apply !mt-0;
   }
-  .box li:last-child,
+  .box li{
+    @apply m-0;
+  }
+ 
   .box p:last-child {
     @apply !mb-0;
   }
