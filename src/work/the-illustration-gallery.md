@@ -1,5 +1,5 @@
 ---
-title: The Illustration Gallery branding and publications
+title: The Illustration Gallery
 date: 2011-09-01
 description: An online gallery dedicated to contemporary illustration.
 image: "/images/gallery.jpg"
@@ -7,8 +7,7 @@ logo: "/images/tig-logo.jpg"
 tags:
 - Work
 categories:
-- Branding
-- Design
+- Branding & design
 layout: post
 featured: "False"
 ---

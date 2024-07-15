@@ -4,15 +4,20 @@
 
 @layer components {
   body {
-    @apply subpixel-antialiased text-gray-900 dark:text-gray-100;
+    @apply subpixel-antialiased text-gray-900 dark:text-gray-100 font-[300];
   }
   .caption {
     @apply text-sm text-center;
-  }
+  } 
 
   .content {
-    @apply prose lg:prose-lg mx-auto py-20 px-6;
+    @apply prose lg:prose-lg mx-auto py-20 px-6 font-[300];
   }
+
+  .content a {
+    @apply font-[300] decoration-gray-400 hover:decoration-gray-800;
+  }
+
   .content p:last-child {
     @apply mb-0;
   }
